@@ -1,0 +1,39 @@
+.job-list {
+  background-color: #eff1fc;
+  .search-job {
+    transform: translateY(-50%);
+    padding:20px;
+    
+  }
+  .continer {
+    width: 80%;
+    margin: 0 auto 75px;
+    .list {
+      li {
+      display: flex;
+        img {
+          height: 100%;
+        }
+
+      }
+    }
+  }
+  .split-line {
+    width: 80px;
+    height: 3px;
+    margin: 21px auto;
+    background-color: #284bc1;
+    position: relative;
+    &::after{
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      position: absolute;
+      top: -3px;
+      left: 37px;
+      background-color: #284bc1;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+.home{
+  .split-line {
+    width: 80px;
+    height: 3px;
+    margin: 21px auto;
+    background-color: #284bc1;
+    position: relative;
+    &::after{
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg);
+      position: absolute;
+      top: -3px;
+      left: 37px;
+      background-color: #284bc1;
+    }
+  }
+
+  .job-info {
+    margin: 100px auto;
+    width: 80%;
+    
+
+    .category-box{
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      
+      .continer{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        
+        background: #edf0fb;
+        text-align: center;
+        @media (min-width:768px){
+          flex:0 0 48%;
+        }
+        @media (min-width: 992px){
+          flex:0 0 23%;
+        }
+        .icon-box{
+          margin: 20px auto;
+          height: 64px;
+          width: 64px;
+          line-height: 64px;
+          border-radius: 50%;
+          background: #dde0fb;
+        }
+        .type {
+          font-size: 18px;
+          font-weight: 600;
+          
+        }
+        .count {
+          color: #27aa75;
+        }
+      }
+      .btn-box {
+        margin-top:50px;
+        width:100%;
+        text-align: center;
+        button {
+          width: 150px;
+          border-color: #284bc1;
+          color: #284bc1;
+          font-weight: 500;
+          &:hover{
+            background-color: #284bc1;
+            color: #fff;
+            transition: .5s;
+          }
+        }
+      }
+      
+    }
+  }
+  .job-recommend{
+    padding: 50px 0 70px;
+    background: #edf0fb;
+    .recommend{
+      width: 80%;
+      margin: 100px auto;
+      background: white;
+      display: flex;
+      border-radius: 10px;
+      div{
+        flex:1;
+        padding: 15px 0;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .active{
+        background: #284bc1;
+        color: white;
+      }
+    }
+    .jobs {
+      width: 80%;
+      margin: 0 auto;
+      .look-more {
+        width:25%;
+        margin: 50px auto 0;
+        display: block;
+      }
+    }
+  }
+  
+  .find-job {
+    width: 80%;
+    margin: 50px auto;
+    .category-box{
+      margin-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      .continer{
+        padding: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        
+        background: #edf0fb;
+        text-align: center;
+        @media (min-width:768px){
+          flex:0 0 32%;
+        }
+        .img-box{
+          margin: 0 auto;
+          height: 90px;
+          width: 90px;
+          line-height: 90px;
+          border-radius: 50%;
+          background: #dde0fb;
+          img {
+            height: 90%;
+            width: 90%;
+          }
+        }
+        .title {
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .text {
+          padding: 10px 20px;
+        }
+        .read-more {
+          color: #2f55d4;
+        }
+      }
+    }
+  }
+  .statistics {
+    // background-color: rgba(100, 110, 190, .4);
+    background: url('../../images/bg-counters.jpg') center;
+    padding: 50px 0;
+    position: relative;
+    .bg-gray{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(94, 119, 204, 0.49);
+    }
+    .category-box{
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: #fff;
+      .continer{
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        
+        text-align: center;
+        
+        @media (min-width:768px){
+          flex:0 0 46%;
+        }
+        @media (min-width:992px){
+          flex:0 0 23%;
+        }
+        .count {
+          margin-top: 20px;
+          font-size: 40px;
+          text-align: center;
+          font-weight: 600;
+        }
+        .text {
+          padding: 10px 20px;
+          text-align: center;
+        }
+       
+      }
+    }
+  }
+}
